@@ -1,0 +1,5 @@
+Observe under GPU default.
+if sm_active_pct_avg < 30: trial gpu_ondemand
+else: retain gpu_default
+Accept only if completed_launches > 0, measured GPU EDP improves, and latency <= 1.05 * default latency; otherwise revert.
+Validation: exact empirical-governor match 90.0%; median GPU EDP regret 0.00%.
