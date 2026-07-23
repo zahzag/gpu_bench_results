@@ -1,0 +1,4 @@
+PASS 2026-07-23T12:26:52
+Validated 2400 runs, 240 cells, 120 CPU pairs, 30 recommendations, 7 PNG plots.
+Confirmed GPU EDP = avg_gpu_time_sec^2 * power_draw_w_avg per run; cell median is median of per-run EDP.
+Confirmed nonvalid cells have no EDP, recommendation latency guardrails, CSVs, PNG dimensions, and PDF signature.

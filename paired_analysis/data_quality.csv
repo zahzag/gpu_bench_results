@@ -1,0 +1,3 @@
+scope,source_file,runs,cells,valid_edp_runs,censored_runs,zero_gpu_time_runs,censored_cells,instrumentation_limited_cells,experiment_first_ts,experiment_last_ts,treatment
+cpu_powersave,/tmp/results_cpu_powersave.csv,1200,120,1100,30,70,3,7,20260716_164154,20260718_190616,missing GPU time censored; zero GPU time excluded; EDP median of per-run products
+cpu_performance,/mnt/c/Users/ayman/Downloads/20260720_191544/results.csv,1200,120,1100,30,70,3,7,20260720_191752,20260722_214012,missing GPU time censored; zero GPU time excluded; EDP median of per-run products

@@ -1,0 +1,43 @@
+DGX Spark CPU/GPU Governor Study - Speaker Notes
+
+Slide 01 - Title
+- Evidence loaded from /tmp/cpu_gpu_governor_analysis/governor_effects.csv.
+- Findings loaded from /tmp/cpu_gpu_governor_analysis/FINDINGS.md.
+
+Slide 02 - One central question
+- Separate host launch latency from device execution effects.
+
+Slide 03 - Experimental design
+- The slide reports observed artifact rows; the study target is stated in the supplied brief.
+
+Slide 04 - Metric definition
+- GPU EDP uses device execution time, squared, multiplied by measured GPU power.
+- Launch time is analyzed only as latency.
+
+Slide 05 - Data quality and censoring
+- Missing numeric values are excluded per metric, never imputed.
+- Censored count is derived only when a status/censoring field exists.
+
+Slide 06 - Workload bottlenecks
+- Use workload-level evidence before choosing a governor.
+
+Slide 07 - CPU governor impact on launch latency
+- Comparisons use medians of non-missing launch-time observations.
+
+Slide 08 - CPU impact on GPU time and EDP
+- A CPU governor can affect launch latency without materially changing device execution.
+
+Slide 09 - GPU governor tradeoff
+- GPU EDP weights time quadratically and power linearly.
+
+Slide 10 - Workload-specific wins
+- Strong recommendations require magnitude, cross-mode direction, and repeat consistency.
+
+Slide 11 - Robust recommendations
+- Recommendations quoted or paraphrased from FINDINGS are preferred over inferred universal settings.
+
+Slide 12 - Transparent runtime policy
+- Counter names are generic classes; map them to available platform telemetry.
+
+Slide 13 - Limitations and x86 HPC next steps
+- Do not transfer DGX Spark thresholds directly to x86 HPC nodes.
